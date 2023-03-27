@@ -1,0 +1,29 @@
+/* css style sheet by Jacob T */
+.parallax {
+    /* The image used, change this per page if needed */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/482/576/original/abstract-technology-background-blue-circuit-board-and-microchip-digital-power-line-vector.jpg");
+    /* Keep the rest the same */
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+.caption {
+   position:absolute;
+   left: 0%;
+   top: 20%;
+   width: 100%;
+   text-align: center;
+   color: #000;
+   }
+.caption span.border {
+   background-color: #66666655;
+   color: #fff;
+   padding: 18px;
+   font-size: 120px;
+   letter-spacing: 10px;
+   border-radius:20px;
+   }
+h1 {font-size: 64px;text-align:center;}
+p{font-size: 16px;text-align:center;}
