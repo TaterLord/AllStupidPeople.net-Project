@@ -13,7 +13,7 @@
 <h1>ASP.net Quiz</h1>
 
 <!-- Template Section -->
-<form method="post" action="http://mercury.swin.edu.au/...........">
+<form id="template" method="post" action="http://mercury.swin.edu.au/...........">
     
     <!-- Text Input -->
     <fieldset>
@@ -159,6 +159,87 @@
 
 <!-- Actual Quiz -->
 <form method="post" action="http://mercury.swin.edu.au/...........">
+
+    <!-- Multiple Choice (Select One) -->
+    <fieldset>
+        <!-- Area title -->
+        <legend>Question 1</legend>
+
+        <!-- Question -->
+        <p>Who is the creator of ASP.NET?</p>
+
+        <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
+        <p>
+            <input type="radio" id="A" name="Q1" value="A" required="required">
+            <label for="A">Apple</label>
+        </p>
+        <p>
+            <input type="radio" id="B" name="Q1" value="B">
+            <label for="B">Mojang</label>
+        </p>
+        <p>
+            <input type="radio" id="C" name="Q1" value="C">
+            <label for="C">Microsoft</label>
+        </p>
+        <p>
+            <input type="radio" id="D" name="Q1" value="D">
+            <label for="D">Wube Software</label>
+        </p>
+    </fieldset>
+
+    <!-- Multiple Choice (Select One) -->
+    <fieldset>
+        <!-- Area title -->
+        <legend>Question 2</legend>
+
+        <!-- Question -->
+        <p>What is the purpose of ASP.NET?</p>
+
+        <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
+        <p>
+            <input type="radio" id="A" name="Q2" value="A" required="required">
+            <label for="A">To help run servers for all kinds of purposes</label>
+        </p>
+        <p>
+            <input type="radio" id="B" name="Q2" value="B">
+            <label for="B">To help build web pages</label>
+        </p>
+        <p>
+            <input type="radio" id="C" name="Q2" value="C">
+            <label for="C">To create an interactive work environment for developers</label>
+        </p>
+        <p>
+            <input type="radio" id="D" name="Q2" value="D">
+            <label for="D">To help all stupid people learn how to use nets</label>
+        </p>
+    </fieldset>
+
+    <!-- Multiple Choice (Select One) -->
+    <fieldset>
+        <!-- Area title -->
+        <legend>Question 3</legend>
+
+        <!-- Question -->
+        <p>What does ASP.NET excel at?</p>
+
+        <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
+        <p>
+            <input type="radio" id="A" name="Q3" value="A" required="required">
+            <label for="A">Stress, Performance, Drive & Dieting</label>
+        </p>
+        <p>
+            <input type="radio" id="B" name="Q3" value="B">
+            <label for="B">Success, Perfection, Dynamic & Distinguishing</label>
+        </p>
+        <p>
+            <input type="radio" id="C" name="Q3" value="C">
+            <label for="C">Safety, Patching, Dispatch & Data</label>
+        </p>
+        <p>
+            <input type="radio" id="D" name="Q3" value="D">
+            <label for="D">Security, Performance, Debugging & Diagnostics</label>
+        </p>
+    </fieldset>
     
 </form> 
 </body>
