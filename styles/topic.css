@@ -1,3 +1,11 @@
+/*
+filename: Styles.css
+author: Group 3 - AllStupidPeople.net
+created: 22/03/2023
+last modified: 19/04/2022
+description: lab04.html
+*/
+
 #watermark {
     content:'';
     position: absolute;
@@ -9,5 +17,38 @@
     background-attachment: fixed;
     pointer-events: none;
     z-index: -1;
-    opacity: 20%;
+    opacity: 30%;
+}
+
+
+.references {
+    text-align: center;
+    direction: ltr;
+    list-style-type: circle;
+}
+
+
+aside {
+    border: 3px inset #C8A2C8;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    min-width: 30%;
+    max-width: 30%;
+    float: right;
+    box-shadow: 6px 6px 5px #aaaaaa;
+}
+
+aside img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+ol {
+    font-size: 16px;
+}
+
+figure {
+    font-size: 16px;
 }
