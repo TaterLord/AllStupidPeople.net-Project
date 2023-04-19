@@ -1,14 +1,14 @@
 /*
 filename: Styles.css
-author: Group 3 - AllStupidPeople.net
-created: 22/03/2023
+author: Akhil Boda
+created: 05/04/2023
 last modified: 19/04/2022
 description: lab04.html
 */
 
 #watermark {
     content:'';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -20,23 +20,21 @@ description: lab04.html
     opacity: 30%;
 }
 
-
-.references {
+h2 {
     text-align: center;
-    direction: ltr;
-    list-style-type: circle;
+    text-decoration: underline 2px white;
 }
 
 
-aside {
+.aside {
     border: 3px inset #C8A2C8;
+    position: right;
     border-radius: 14px;
     margin: 1em;
     padding: 1em;
-    min-width: 30%;
-    max-width: 30%;
+    max-width: 35%;
     float: right;
-    box-shadow: 6px 6px 5px #aaaaaa;
+    box-shadow: -6px 6px 5px #aaaaaadc;
 }
 
 aside img {
@@ -45,10 +43,61 @@ aside img {
     height: auto;
 }
 
+#table {
+    max-width: 100%;
+}
+
 ol {
     font-size: 16px;
 }
 
 figure {
     font-size: 16px;
+}
+
+#usagestatistics {
+    font-size: 14px;
+    text-align: center;
+}
+
+table caption {
+    font-size: 16px;
+}
+
+#video {
+    text-align: center;
+    border: 3px outset #C8A2C8;
+    position:relative;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    max-width: 95%;
+    box-shadow: -6px 6px 5px #aaaaaadc;
+
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr::before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+footer {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
 }
