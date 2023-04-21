@@ -12,6 +12,17 @@ h1 {
     padding-top: 0.55em;
 }
 
+.parallax {
+    /* The image used, change this per page if needed */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/482/576/original/abstract-technology-background-blue-circuit-board-and-microchip-digital-power-line-vector.jpg");
+    /* Keep the rest the same */
+    min-height: 15em;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 fieldset{
     margin: 0 auto;
     padding: 1em;
