@@ -1,23 +1,29 @@
 /*
-filename:       quiz.css
-author:         Reuben Holmes
-created:        30/03/2023
-last modified:  30/03/2023
-description:    A CSS file to style quiz.html
+    filename:       quiz.css
+    author:         Reuben Holmes
+    created:        30/03/2023
+    last modified:  21/04/2023
+    description:    A CSS file to style quiz.html
 */
 
 /*------  Headers  ------*/
 
-fieldset {
-    margin: 1em;
+h1 {
+    padding-top: 0.55em;
+}
+
+fieldset{
+    margin: 0 auto;
     padding: 1em;
-    border: 5px ridge rgb(100, 100, 100);
-    background-color: rgb(70, 70, 70);
+    background-color: #272729;
+    border: none;
+    border-radius: 40px;
 }
 
 legend {
     font-size: 18px;
     font-weight: bold;
+    text-indent: 1.5em;
 }
 
 /*------  Content  ------*/
@@ -25,8 +31,5 @@ legend {
 p {
     text-align: left;
     margin: 0.6em;
-}
-
-#template {
-    display: none;
+    text-indent: 2em;
 }

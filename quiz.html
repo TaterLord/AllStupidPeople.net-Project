@@ -1,3 +1,12 @@
+<!--
+    filename:       quiz.html
+    author:         Reuben Holmes (AllStupidPeople.net)
+    created:        30/03/2023
+    last modified:  21/04/2023
+    description:    Group 03 - Project
+    enhancements:   
+-->
+
 <html>
 <head>
     <meta charset="utf-8" >
@@ -10,336 +19,171 @@
 </head>
 
 <body>
-<h1>ASP.net Quiz</h1>
+    <h1>
+        ASP.net Quiz
+    </h1>
 
-<!-- Template Section -->
-<form id="template" method="post" action="http://mercury.swin.edu.au/...........">
-    
-    <!-- Text Input -->
-    <fieldset>
-        <!-- Area title -->
-        <legend>Question #</legend>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html">About ASP.NET</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li style="float:right"><a href="enhancements.html">Enhancements</a></li>
+    </ul>
+    <br>
+    <br>
 
-        <!-- Question -->
-        <p>Question Question Question Filler Question</p>
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
-        <!-- for corresponds to id -->
-        <!-- Label for text box -->
-        <p><label for="id tag">Question</label></p>
-        
-        <!-- Text box -->
-        <p><input type="text" name="name for output" id="id tag" required="required"
-        pattern="input pattern" title="text for if not fitting pattern"></p>
-    </fieldset>
+        <!-- Text Input -->
+        <fieldset>
+            <!-- Area title -->
+            <legend>Personal Information</legend>
 
-    <!-- Multiple Choice (Select One) -->
-    <fieldset>
-        <!-- Area title -->
-        <legend>Question #</legend>
+            <!-- for corresponds to id -->
+            <!-- Label for text box -->
+            <p>
+                <label for="firstname">First Name</label>
+                <input type="text" name="first name" id="firstname" required="required"
+                pattern="[A-Za-z-']{1-30}" title="Must have only a-z, A-Z, - and ', maximum of 30 characters">
+            </p>
+            <p>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="last name" id="lastname" required="required"
+                pattern="[A-za-z-']{1-30}" title="Must have only a-z, A-Z, - and ', maximum of 30 characters">
+            </p>
+            <p>
+                <label for="id">Student ID</label>
+                <input type="text" name="student id" id="id" required="required"
+                pattern="[0-9]{7,10}" title="Must have only numbers, either 7 or 10 characters">
+            </p>
+        </fieldset>
 
-        <!-- Question -->
-        <p>Question Question Question Filler Question</p>
+        <!-- Multiple Choice (Select One) -->
+        <fieldset>
+            <!-- Area title -->
+            <legend>Question 1</legend>
 
-        <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
-        <p>
-            <input type="radio" id="A" name="QuestionTopic" value="A" required="required">
-            <label for="A">Answer 1</label>
-        </p>
-        <p>
-            <input type="radio" id="B" name="QuestionTopic" value="B">
-            <label for="B">Answer 2</label>
-        </p>
-        <p>
-            <input type="radio" id="C" name="QuestionTopic" value="C">
-            <label for="C">Answer 3</label>
-        </p>
-        <p>
-            <input type="radio" id="D" name="QuestionTopic" value="D">
-            <label for="D">Answer 4</label>
-        </p>
-    </fieldset>
+            <!-- Question -->
+            <p><label for="who">Who is the creator of ASP.NET?</label></p>
 
-    <!-- Multiple Choice (Select Multiple) -->
-    <fieldset>
-        <!-- Area Title -->
-        <legend>Question #</legend>
-
-        <!-- Question -->
-        <p>Question Question Question Filler Question</p>
-
-        <!-- for corresponds to id, name corresponds to table LHS output in arrays style, value corresponds to table RHS output -->
-        <p>
-            <input type="checkbox" id="A" name="QuestionTopic[]" value="A" checked="checked">
-            <label for="A">Answer 1</label>
-        </p>
-        <p>
-            <input type="checkbox" id="B" name="QuestionTopic[]" value="B">
-            <label for="B">Answer 2</label>
-        </p>
-        <p>
-            <input type="checkbox" id="C" name="QuestionTopic[]" value="C">
-            <label for="C">Answer 3</label>
-        </p>
-        <p>
-            <input type="checkbox" id="D" name="QuestionTopic[]" value="D">
-            <label for="D">Answer 4</label>
-        </p>
-    </fieldset>
-
-    <!-- Dropdown Box -->
-    <fieldset>
-        <!-- Area Title -->
-        <legend>Question #</legend>
-
-        <!-- Question -->
-        <p>Question Question Question Filler Question</p>
-        
-        <p>
             <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
-            
-            <!-- Label -->
-            <label for="id">Dropdown Box</label>
+            <!-- Text box -->
+            <p><input type="text" name="who made" id="who" required="required"
+            pattern="[A-Za-z-]{1-30}" title="Can only use capital and lowercase letters"></p>
+        </fieldset>
 
-            <!-- Options -->
-            <select name="options" id="id" required="required">
-                <option value="">Please Select</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </p>
-    </fieldset>
+        <!-- Multiple Choice (Select One) -->
+        <fieldset>
+            <!-- Area title -->
+            <legend>Question 2</legend>
 
-    <!-- Extras -->
-    <fieldset>
-        <!-- Area Title -->
-        <legend>Date & Time</legend>
-        <!-- for corresponds to id, name corresponds to table output LHS -->
-        
-        <!-- DATE -->
-        <p>
-            <!-- Date via date input -->
-            <label for="date1">Date1</label>
-            <input type="date" id="date1" name="date1" placeholder="dd-mm-yyyy" maxlength="10" size="10">
-        </p>
-        <p>
-            <!-- Date via text input -->
-            <label for="date2">Date2</label>
-            <input type="text" id="date2" name="date2"
-            pattern="([0-2]?[0-9]|3[01])/([0]?[1-9]|1[0-2])/([0-9]{4})" title="Must have a valid date"
-            placeholder="dd/mm/yyyy">
-        </p>
+            <!-- Question -->
+            <p>What is the purpose of ASP.NET?</p>
 
-        <!-- TIME -->
-        <p>
-            <!-- Time via time input-->
-            <label for="time1">Time1</label>
-            <input type="time" id="time1" name="time1" placeholder="00:00" maxlength="5" size="5">
-        </p>
-        <p>
-            <!-- Time via text input-->
-            <label for="time2">Time2</label>
-            <input type="text" id="time2" name="time2"
-            pattern="([0-1]?[0-9]|2[0-3]):[0-5][0-9]" title="Must have a valid time"
-            placeholder="00:00">
-        </p>
-        
-        <!-- EMAIL -->
-        <p>
-            <!-- Email via email input -->
-            <label for="email">Email</label>
-            <input type="email" name= "email" id="email" required="required"/>
-        </p>
-    </fieldset>
-
-    <!-- Insert and Reset buttons -->
-    <input type="submit" value="Register"/>
-	<input type="reset" value="Reset Form"/>
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- --------------------------------------------   Actual Quiz   -------------------------------------------- -->
-<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-
-    <!-- Text Input -->
-    <fieldset>
-        <!-- Area title -->
-        <legend>Personal Information</legend>
-
-        <!-- for corresponds to id -->
-        <!-- Label for text box -->
-        <p>
-            <label for="firstname">First Name</label>
-            <input type="text" name="first name" id="firstname" required="required"
-            pattern="[A-Za-z-']{1-30}" title="Must have only a-z, A-Z, - and ', maximum of 30 characters">
-        </p>
-        <p>
-            <label for="lastname">Last Name</label>
-            <input type="text" name="last name" id="lastname" required="required"
-            pattern="[A-za-z-']{1-30}" title="Must have only a-z, A-Z, - and ', maximum of 30 characters">
-        </p>
-        <p>
-            <label for="id">Student ID</label>
-            <input type="text" name="student id" id="id" required="required"
-            pattern="[0-9]{7,10}" title="Must have only numbers, either 7 or 10 characters">
-        </p>
-    </fieldset>
-
-    <!-- Multiple Choice (Select One) -->
-    <fieldset>
-        <!-- Area title -->
-        <legend>Question 1</legend>
-
-        <!-- Question -->
-        <p><label for="who">Who is the creator of ASP.NET?</label></p>
-
-        <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
-        <!-- Text box -->
-        <p><input type="text" name="who made" id="who" required="required"
-        pattern="[A-Za-z-]{1-30}" title="Can only use capital and lowercase letters"></p>
-    </fieldset>
-
-    <!-- Multiple Choice (Select One) -->
-    <fieldset>
-        <!-- Area title -->
-        <legend>Question 2</legend>
-
-        <!-- Question -->
-        <p>What is the purpose of ASP.NET?</p>
-
-        <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
-        <p>
-            <input type="radio" id="A" name="what purpose" value="A" required="required">
-            <label for="A">To help run servers for all kinds of purposes</label>
-        </p>
-        <p>
-            <input type="radio" id="B" name="what purpose" value="B">
-            <label for="B">To help build web pages</label>
-        </p>
-        <p>
-            <input type="radio" id="C" name="what purpose" value="C">
-            <label for="C">To create an interactive work environment for developers</label>
-        </p>
-        <p>
-            <input type="radio" id="D" name="what purpose" value="D">
-            <label for="D">To help all stupid people learn how to use nets</label>
-        </p>
-    </fieldset>
-
-    <!-- Multiple Choice (Select One) -->
-    <fieldset>
-        <!-- Area title -->
-        <legend>Question 3</legend>
-
-        <!-- Question -->
-        <p>What does ASP.NET excel at? (pick 4)</p>
-        <!-- for corresponds to id, name corresponds to table LHS output in arrays style, value corresponds to table RHS output -->
-        <p>
-            <input type="checkbox" id="A" name="excel[]" value="A">
-            <label for="A">Performance</label>
-        </p>
-        <p>
-            <input type="checkbox" id="B" name="excel[]" value="B">
-            <label for="B">Patching</label>
-        </p>
-        <p>
-            <input type="checkbox" id="C" name="excel[]" value="C">
-            <label for="C">Dieting</label>
-        </p>
-        <p>
-            <input type="checkbox" id="D" name="excel[]" value="D">
-            <label for="D">Diagnostics</label>
-        </p>
-        <p>
-            <input type="checkbox" id="E" name="excel[]" value="E">
-            <label for="D">Security</label>
-        </p>
-        <p>
-            <input type="checkbox" id="D" name="excel[]" value="F">
-            <label for="D">Dynamic</label>
-        </p>
-        <p>
-            <input type="checkbox" id="D" name="excel[]" value="G">
-            <label for="D">Safety</label>
-        </p>
-        <p>
-            <input type="checkbox" id="D" name="excel[]" value="H">
-            <label for="D">Debugging</label>
-        </p>
-    </fieldset>
-
-    <!-- Dropdown Box -->
-    <fieldset>
-        <!-- Area Title -->
-        <legend>Question 4</legend>
-
-        <!-- Question -->
-        <p>What language can ASP.net use?</p>
-        
-        <p>
             <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
+            <p>
+                <input type="radio" id="A" name="what purpose" value="A" required="required">
+                <label for="A">To help run servers for all kinds of purposes</label>
+            </p>
+            <p>
+                <input type="radio" id="B" name="what purpose" value="B">
+                <label for="B">To help build web pages</label>
+            </p>
+            <p>
+                <input type="radio" id="C" name="what purpose" value="C">
+                <label for="C">To create an interactive work environment for developers</label>
+            </p>
+            <p>
+                <input type="radio" id="D" name="what purpose" value="D">
+                <label for="D">To help all stupid people learn how to use nets</label>
+            </p>
+        </fieldset>
+
+        <!-- Multiple Choice (Select One) -->
+        <fieldset>
+            <!-- Area title -->
+            <legend>Question 3</legend>
+
+            <!-- Question -->
+            <p>What does ASP.NET excel at? (pick 4)</p>
+            <!-- for corresponds to id, name corresponds to table LHS output in arrays style, value corresponds to table RHS output -->
+            <p>
+                <input type="checkbox" id="A" name="excel[]" value="A">
+                <label for="A">Performance</label>
+            </p>
+            <p>
+                <input type="checkbox" id="B" name="excel[]" value="B">
+                <label for="B">Patching</label>
+            </p>
+            <p>
+                <input type="checkbox" id="C" name="excel[]" value="C">
+                <label for="C">Dieting</label>
+            </p>
+            <p>
+                <input type="checkbox" id="D" name="excel[]" value="D">
+                <label for="D">Diagnostics</label>
+            </p>
+            <p>
+                <input type="checkbox" id="E" name="excel[]" value="E">
+                <label for="D">Security</label>
+            </p>
+            <p>
+                <input type="checkbox" id="D" name="excel[]" value="F">
+                <label for="D">Dynamic</label>
+            </p>
+            <p>
+                <input type="checkbox" id="D" name="excel[]" value="G">
+                <label for="D">Safety</label>
+            </p>
+            <p>
+                <input type="checkbox" id="D" name="excel[]" value="H">
+                <label for="D">Debugging</label>
+            </p>
+        </fieldset>
+
+        <!-- Dropdown Box -->
+        <fieldset>
+            <!-- Area Title -->
+            <legend>Question 4</legend>
+
+            <!-- Question -->
+            <p>What language can ASP.net use?</p>
             
-            <!-- Label -->
-            <label for="language">Language</label>
+            <p>
+                <!-- for corresponds to id, name corresponds to table LHS output, value corresponds to table RHS output -->
+                
+                <!-- Label -->
+                <label for="language">Language</label>
 
-            <!-- Options -->
-            <select name="language" id="language" required="required">
-                <option value="">Please Select</option>
-                <option value="1">Javascript</option>
-                <option value="2">Python</option>
-                <option value="3">Visual Basic</option>
-            </select>
-        </p>
-    </fieldset>
+                <!-- Options -->
+                <select name="language" id="language" required="required">
+                    <option value="">Please Select</option>
+                    <option value="1">Javascript</option>
+                    <option value="2">Python</option>
+                    <option value="3">Visual Basic</option>
+                </select>
+            </p>
+        </fieldset>
 
-    <!-- Date -->
-    <fieldset>
-        <!-- Area Title -->
-        <legend>Question 5</legend>
+        <!-- Date -->
+        <fieldset>
+            <!-- Area Title -->
+            <legend>Question 5</legend>
 
-        <!-- Question -->
-        <p>When was ASP.net concieved?</p>
-        
-        <!-- DATE -->
-        <p>
-            <!-- Date via date input -->
-            <label for="date">Date</label>
-            <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" maxlength="10" size="10">
-        </p>
-    </fieldset>
+            <!-- Question -->
+            <p>When was ASP.net concieved?</p>
+            
+            <!-- DATE -->
+            <p>
+                <!-- Date via date input -->
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" maxlength="10" size="10">
+            </p>
+        </fieldset>
 
-    <!-- Insert and Reset buttons -->
-    <input type="submit" value="Register"/>
-	<input type="reset" value="Reset Form"/>
-</form> 
+        <!-- Insert and Reset buttons -->
+        <input type="submit" value="Register"/>
+        <input type="reset" value="Reset Form"/>
+    </form> 
 </body>
 </html>
