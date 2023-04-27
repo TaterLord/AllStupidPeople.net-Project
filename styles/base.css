@@ -1,9 +1,11 @@
 /* css style sheets by Jacob T */
-html{font-size: 10px;font-family: Roboto, Arial, sans-serif;background-color:#343434;color:white;}
-a{font-size: 16px;color: #77cbff;}
+html {font-size: 10px;font-family: Roboto, Arial, sans-serif;background-color:#343434;color:white;}
+a {font-size: 16px;color: #77cbff;}
 h1 {font-size: 64px;text-align:center;}
 h2 {font-size: 48px;text-align:center;}
-p{font-size: 16px;text-align:center;}
+p {font-size: 16px;text-align:center;}
+ol, ul {font-size: 16px;}
+
 .caption {
    position:absolute;
    left: 0%;
@@ -12,6 +14,7 @@ p{font-size: 16px;text-align:center;}
    text-align: center;
    color: #000;
    }
+
 .caption span.border {
    background-color: #66666655;
    color: #fff;
@@ -21,30 +24,45 @@ p{font-size: 16px;text-align:center;}
    border-radius:20px;
    }
 
+.parallax {
+    /* The image used, change this per page if needed */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/482/576/original/abstract-technology-background-blue-circuit-board-and-microchip-digital-power-line-vector.jpg");
+    /* Keep the rest the same */
+    min-height: 15em;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* css for navigation bar using lists */
-ul{
+nav ul{
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       background-color: #222;
       font-size: 20px;
-  }
-li {
+}
+
+nav ul li {
       float: left;
       border-right: 1px solid #777;
       font-size:16px;
-  }
-li:last-child{
+}
+
+nav ul li:last-child{
       border-right: none;
-  }
-li a {
+}
+
+nav ul li a {
       display: block;
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-  }
-li a:hover{
+}
+
+nav ul li a:hover{
       background-color: #111;
-  }
+}
