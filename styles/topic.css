@@ -44,38 +44,53 @@ h3 {
     background-size: cover;
     z-index: -1;
     opacity: 35%;
-}
-
-.tableimg {
-    max-width: 10%;
-}
-
-.aside {
-    border: 3px inset #C8A2C8;
-    border-radius: 14px;
-    margin: 0 auto;
-    padding: 1em;
-    max-width: 35%;
-}
-
-caption {
-    font-size: 16px;
-}
-
-
-img {
     object-fit: cover;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
+#video {
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column;
 }
 
-ol {
-    font-size: 16px;
+aside {
+    border: 3px inset #C8A2C8;
+    background-color: #272729cb;
+    border-radius: 14px;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 100%;
+    overflow: auto;
+    text-align: center;
 }
 
+figure {
+    padding: 2em;
+    position: relative;
+    background-color: #272729cb;
+    border-radius: 40px;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+ ol li {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
 
 
 #usagestatistics {
@@ -92,21 +107,18 @@ section {
 
 dl {
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
 }
+
 
 dt {
     font-weight: bold;
 }
 
-#video {
-    text-align: center;
-    border: 3px outset #C8A2C8;
-    border-radius: 14px;
-    margin: 0 auto;
-    padding: 1em;
-    max-width: 80%;
+dd {
+    margin-bottom: 25px;
 }
+
 
 hr {
     overflow: visible; /* For IE */
@@ -131,4 +143,11 @@ hr::before {
 footer p {
     font-style: italic;
     font-size: 14px;
+}
+
+.hoverzoom{
+    transition: transform .2s;
+}
+.hoverzoom:hover{
+    transform: scale(1.025);
 }
