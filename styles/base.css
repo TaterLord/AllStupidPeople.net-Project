@@ -21,8 +21,19 @@ p{font-size: 16px;text-align:center;}
    border-radius:20px;
    }
 
+.parallax {
+    /* The image used, change this per page if needed */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/482/576/original/abstract-technology-background-blue-circuit-board-and-microchip-digital-power-line-vector.jpg");
+    /* Keep the rest the same */
+    min-height: 15em;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* css for navigation bar using lists */
-ul{
+nav ul{
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -30,21 +41,21 @@ ul{
       background-color: #222;
       font-size: 20px;
   }
-li {
+nav ul li {
       float: left;
       border-right: 1px solid #777;
       font-size:16px;
   }
-li:last-child{
+nav ul li:last-child{
       border-right: none;
   }
-li a {
+nav ul li a {
       display: block;
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
   }
-li a:hover{
+nav ul li a:hover{
       background-color: #111;
   }
