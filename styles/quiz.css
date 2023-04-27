@@ -2,7 +2,7 @@
     filename:       quiz.css
     author:         Reuben Holmes
     created:        30/03/2023
-    last modified:  21/04/2023
+    last modified:  26/04/2023
     description:    A CSS file to style quiz.html
 */
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 fieldset{
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 1em;
     background-color: #272729;
     border: none;
