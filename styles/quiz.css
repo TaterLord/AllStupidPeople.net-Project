@@ -9,7 +9,9 @@
 /*------  Headers  ------*/
 
 h1 {
-    padding-top: 0.55em;
+    position:absolute;
+    padding-top: 0em;
+    width: 100%;
 }
 
 .parallax {
