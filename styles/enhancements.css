@@ -1,8 +1,8 @@
 /*
     filename:       enhancements.css
-    author:         
+    author:         Reuben Holmes
     created:        21/04/2023
-    last modified:  21/04/2023
+    last modified:  26/04/2023
     description:    A CSS file to style enhancements.html
 */
 
@@ -14,7 +14,7 @@ h3 {
 div {
     padding: 2em;
     background-color: #272729;
-    margin: 0 auto;
+    margin: 2em auto;
     border-radius: 40px;
 }
 
