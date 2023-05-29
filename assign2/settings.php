@@ -8,7 +8,7 @@
 
 <?php
 	$host = "feenix-mariadb.swin.edu.au";
-	$user = "s123456789"; // the user name
-	$pwd = "xxxxxx"; // the password
-	$sql_db = "s123456789_db"; // the database
+	$user = "s103826102"; // the user name
+	$pwd = "Ratana@2607"; // the password
+	$sql_db = "s103826102_db"; // the database
 ?>

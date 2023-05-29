@@ -29,10 +29,10 @@
     </div>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="topic.html">About ASP.NET</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li style="float:right"><a href="enhancements.html">Enhancements</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="topic.php">About ASP.NET</a></li>
+            <li><a href="quiz.php">Quiz</a></li>
+            <li style="float:right"><a href="enhancements1.html">Enhancements</a></li>
         </ul>
     </nav>
     <br>
@@ -42,13 +42,16 @@
         <p>
             ASP.NET is a web application framework that is used to build dynamic and interactive web pages. It is a server-side technology that is designed and developed by Microsoft. Built on top of the .NET framework, it is used by developers to build web applications that are secure, scalable, and reliable. <a href="topic.html">Learn more about ASP.NET →</a>
         </p>
+        <br>
+        <br>
+        <p>
+            <em>Part 1 Video Submission:</em> <a href="https://www.youtube.com/watch?v=ddUCOnlkB34&ab_channel=Cob">https://www.youtube.com/watch?v=ddUCOnlkB34&ab_channel=Cob</a>
+        </p>
+        <p>
+            <em>Part 2 Video Submission:</em> <a href=""></a>
+        </p>
     </div>
     <br>
-    <div id="video">
-        <aside class="hoverzoom">
-            <iframe width="600" height="400" src="https://youtu.be/ddUCOnlkB34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </aside>
-        </div>
     <br>
     <div class="hoverzoom">
         <h2>How much do you know about ASP.NET?</h2>
