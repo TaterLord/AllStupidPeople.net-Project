@@ -1,5 +1,5 @@
 <!--    
-    filename: topic.html
+    filename: topic.php
     author: Akhil Boda (AllStupidPeople.net)
     created: 05/04/2023
     last modified: 26/04/2023
