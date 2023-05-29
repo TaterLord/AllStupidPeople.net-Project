@@ -13,10 +13,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" >
-    <meta name="description" content="Intro to ASP.NET" >
-    <meta name="keywords" content="asp.net, index, project" >
-    <meta name="author" content="Jacob T"  >
+    <meta charset="utf-8">
+    <meta name="description" content="Intro to ASP.NET">
+    <meta name="keywords" content="asp.net, index, project">
+    <meta name="author" content="Jacob T">
     <title>ASP.NET</title>
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">

@@ -10,10 +10,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" >
-    <meta name="description" content="Testing your knowledge on ASP.net" >
-    <meta name="keywords" content="ASP.net, Quiz, tags" >
-    <meta name="author" content="Reuben Holmes"  >
+    <meta charset="utf-8">
+    <meta name="description" content="Testing your knowledge on ASP.net">
+    <meta name="keywords" content="ASP.net, Quiz, tags">
+    <meta name="author" content="Reuben Holmes">
     <title>ASP.net Quiz Page</title>
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/quiz.css" rel="stylesheet">
