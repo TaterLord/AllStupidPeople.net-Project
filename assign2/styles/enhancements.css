@@ -1,0 +1,32 @@
+/*
+    filename:       enhancements.css
+    author:         Reuben Holmes
+    created:        21/04/2023
+    last modified:  26/04/2023
+    description:    A CSS file to style enhancements.html
+*/
+
+h3 {
+    font-size: 32px;
+    text-align: left;
+}
+
+div {
+    padding: 2em;
+    background-color: #272729;
+    margin: 2em auto;
+    border-radius: 40px;
+}
+
+h1 {
+    position:absolute;
+    padding-top: 0em;
+    width: 100%;
+}
+
+.parallax {
+    padding: 0em;
+    background-color: none;
+    margin: 0 auto;
+    border-radius: 0;
+}

@@ -1,0 +1,141 @@
+/*
+filename: topic.css
+author: Akhil Boda
+created: 05/04/2023
+last modified: 26/04/2022
+description: A css file to style topic.html
+*/
+
+/*------  Headers  ------*/
+
+h1 {
+    position:absolute;
+    padding-top: 0em;
+    width: 100%;
+}
+
+h3 {
+    font-size: 16px;
+    text-align: center;
+}
+
+#watermark {
+    background-image: url(images/watermark.webp);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 35%;
+    object-fit: cover;
+}
+
+#video {
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column;
+}
+
+aside {
+    border: 3px inset #C8A2C8;
+    background-color: #272729cb;
+    border-radius: 14px;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+figure {
+    padding: 2em;
+    position: relative;
+    background-color: #272729cb;
+    border-radius: 40px;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+ol li {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+
+#usagestatistics {
+    font-size: 14px;
+    text-align: center;
+}
+
+section {
+    padding: 2em;
+    background-color: #272729cb;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+dl {
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 25px;
+}
+
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr::before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+footer p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.hoverzoom{
+    transition: transform .2s;
+}
+.hoverzoom:hover{
+    transform: scale(1.025);
+}

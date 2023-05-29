@@ -1,0 +1,37 @@
+/*
+    filename:       quiz.css
+    author:         Reuben Holmes
+    created:        30/03/2023
+    last modified:  26/04/2023
+    description:    A CSS file to style quiz.html
+*/
+
+/*------  Headers  ------*/
+
+h1 {
+    position:absolute;
+    padding-top: 0em;
+    width: 100%;
+}
+
+fieldset{
+    margin: 1em auto;
+    padding: 1em;
+    background-color: #272729;
+    border: none;
+    border-radius: 40px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1.5em;
+}
+
+/*------  Content  ------*/
+
+p {
+    text-align: left;
+    margin: 0.6em;
+    text-indent: 2em;
+}

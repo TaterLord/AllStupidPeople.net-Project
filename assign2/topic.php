@@ -1,0 +1,142 @@
+<!--    
+    filename: topic.html
+    author: Akhil Boda (AllStupidPeople.net)
+    created: 05/04/2023
+    last modified: 26/04/2023
+    description: Group 03 - Project
+    enhancements: watermark, embedded youtube video, custom horizontal line
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="The Topic page for Computer Systems Project"/>
+        <meta name="keywords" content="HTML5, topic"/>
+        <meta name="author" content="Group 3 - AllStupidPeople.net"/>    
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/topic.css" rel="stylesheet">
+        <title>Find out more about ASP.net</title>   
+    </head>
+    
+    <body>
+        <div class="parallax">
+            <h1>What is ASP.NET?</h1>
+        </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic.html">About ASP.NET</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li style="float:right"><a href="enhancements.html">Enhancements</a></li>
+        </ul>
+    </nav>  
+
+    <br>
+
+    <!-- CSS Styling for Watermark background image-->
+    <img id="watermark" src="images/watermark.webp">
+
+    <section>
+    <h2>
+        INTRODUCTION
+    </h2>
+        <p>
+            ASP.NET is a web application framework that is used to build dynamic and interactive web pages. It is a server-side technology that is designed and developed by Microsoft. It released on 5 January 2002 and is built on top of the .NET framework and it is used by developers to build web applications that are secure, scalable, and reliable.
+        </p>
+
+        <p>
+            Furthermore, it also provides developers with a rich set of features that enable them to build powerful and robust web applications. It supports a wide range of programming languages including C#, VB.NET, and F#. ASP.NET uses a modular architecture that allows developers to easily add or remove components as needed. It also provides a rich set of controls and libraries that make it easy to develop complex applications.
+        </p>
+    </section>
+
+    <br>
+    
+    <div id="video">
+    <aside class="hoverzoom">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/fkdMdZmdBs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </aside>
+    </div>
+
+    <br>
+
+    <section>
+        <h2>BENEFITS</h2>
+        <ol>
+            <li><em><strong>Performance</strong></em> - ASP.NET applications are optimised for performance and can handle large amounts of traffic with ease. This is because ASP.NET uses a compiled code model, which means that the code is compiled into a binary format that can be executed by the server. This makes the code run faster and reduces the load on the server.</li>
+            <br>
+            <li><em><strong>Security</strong></em> - A number of features are provided by ASP.net to help developers build secure web applications. For example, it provides support for authentication and authorization, which enables developers to control access to different parts of the application. It also provides support for encryption, which helps to protect sensitive data.</li>   
+            <br>
+            <li><em><strong>Diagnostics</strong></em> - Developers are also provided with a rich set of tools for debugging and troubleshooting their applications. It provides a number of debugging tools that help developers identify and fix issues in their code. It also provides detailed error messages that help developers understand what went wrong and how to fix it.</li>
+        </ol>
+
+        <p>---------------</p>
+
+        <p>  
+            Furthermore, ASP.NET also provides support for caching, which helps to improve the performance of web applications. It also enables support for state management, which helps to maintain the state of the application across multiple requests.
+        </p>
+        </section>
+
+        <br>
+
+        <table>
+            <tr>
+                <td>
+                    <figure class="hoverzoom">
+                        <figcaption>Differences between ASP.NET and ASP.NET Core</figcaption>
+                        <img src="images/asp_netcore.jpeg"  alt="Netcore vs ASP.net"> 
+                    </figure>            
+                </td>
+                <td>
+                    <figure class="hoverzoom">
+                        <figcaption>ASP.NET is used by 7.1% of all the websites whose server-side programming language we know.</figcaption>
+                        <img src="images/table.png" alt="Percentage of Websites using various versions of ASP.NET">
+                    </figure>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <section>
+            <h2>DEFINITION LIST</h2>
+            <dl>
+                <dt>ASP.NET Core</dt>
+                <dd>A popular online development framework ASP.NET is used to create web applications on the.NET platform. Moreover, The open-source version of ASP.NET, known as ASP.NET core is compatible with macOS, linux, and Windows. Earlier Windows-only versions of ASP.NET have been redesigned as part of the 2016 debut of ASP.NET.</dd>
+                <dt>ASP.NET Performance</dt>
+                <dd>ASP.NET Core places a high priority on performance. In independent tests, it outperforms other widely used web frameworks.</dd>
+                <dt>Modern and Innovative</dt>
+                <dd>ASP.NET Core was developed to support rapid evolution of runtime components, APIs, compilers, and languages while remaining a stable and supported foundation for app development. On the same server, different versions of ASP.NET Core may run side by side. This means that while other apps continue to use the version they were tested on, one app may accept the most recent version. To suit the needs of your app, ASP.NET Core offers a variety of support lifecycle options. If you plan to upgrade more frequently, you can run with the most recent release or select a long-term support release.</dd>
+                <dt>ASP.NET Applications</dt>
+                <dd>Windows, Linux, MacOS, and Docker can all be used to create and operate ASP.NET applications. Any operating system can be used with the tools in the Visual Studio family of products to create .NET apps. For several well-known editors, there are also command-line tools and extensions.</dd>
+                <dt>Flexible Deployment</dt>
+                <dd>The ASP.NET Core runtime that powers your app can either be installed directly on your web server or delivered as a component of your app. Additionally, ASP.NET Core is ideal for Docker containers.</dd>
+            </dl>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>CONCLUSION</h2>
+            <p>
+                Overall, ASP.NET is a powerful and versatile web application framework that is used by developers around the world. It provides a wide range of features and benefits that enable developers to build high-performance, secure, and reliable web applications. If you are looking to build a web application, ASP.NET is definitely worth considering.
+            </p>
+        </section>
+
+        <br>
+            
+        
+        <br>  
+        <br> 
+
+        <hr>
+    </body>
+
+    <footer>
+        <h3><em>References</em></h3>
+        <p><a href="https://dotnet.microsoft.com/en-us/apps/aspnet">https://dotnet.microsoft.com/en-us/apps/aspnet</a></p>
+        <p><a href="https://www.tutorialspoint.com/asp.net/asp.net_introduction.htm">https://www.tutorialspoint.com/asp.net/asp.net_introduction.htm</a></p>
+        <p><a href="https://www.aceinfoway.com/blog/asp-dot-net-core-advantages">https://www.aceinfoway.com/blog/asp-dot-net-core-advantages</a></p>
+        <p><a href="https://w3techs.com/technologies/details/pl-aspnet">https://w3techs.com/technologies/details/pl-aspnet</a></p>
+    </footer>
+</html>
