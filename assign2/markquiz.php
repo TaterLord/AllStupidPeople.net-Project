@@ -41,6 +41,12 @@
             // Initialize updatedAttempt
             $updatedAttempt = 1;
 
+            //Declare Attempts remaining
+            $attemptsremaining = 1;
+
+            // -- DEFAULT INITIALISATION OF SCORE, PLS CHANGE LATER -- 
+            $score = 0;
+
             // Validate the form data
             $errors = [];
             if (empty($firstName)) {
@@ -120,32 +126,32 @@
                 if (mysqli_query($conn, $sql)) {
                     echo "Table attempts created successfully";
                 } else {
-                    echo "Error creating table: " . mysqli_error($conn);
+                    echo "<p>Error creating table: " . mysqli_error($conn) . "</p>";
                 }
             }
 
             // Check if the student exists in the database
-            $query = "SELECT * FROM attempts WHERE student_id = '$studentId'";
+            $query = "SELECT * FROM attempts WHERE f_name = '$firstName'";
             $findStudent = mysqli_query($conn, $query);
             $student = mysqli_fetch_assoc($findStudent);
 
             if (!$student) {
                 // Insert new student
-                $query = "INSERT INTO attempts (date_and_time, f_name, l_name, student_id, no_attempts, score) VALUES (NOW(), '$firstName', '$lastName', '$studentId', '$updatedAttempt', '$score')";
+                $query = "INSERT INTO attempts (date_and_time, f_name, l_name, student_id, no_attempts, score) VALUES (NOW(), '$firstName', '$lastName', '$studentId', '$updatedAttempt', $score)"; //Change score to correct variable
                 mysqli_query($conn, $query);
             } elseif ($student["no_attempts"] < 2) {
                 // Increment the attempt number and update the record
+                
                 $updatedAttempt = $student["no_attempts"] + 1;
                 $query = "UPDATE attempts SET no_attempts = $updatedAttempt, date_and_time = NOW() WHERE student_id = '$studentId'";
                 mysqli_query($conn, $query);
             } else {
-                // Maximum attempts reached, display an error message
-                echo "<h2>Maximum attempts reached. Further updates are not allowed.</h2>";
+                // Maximum attempts reached
                 $updatedAttempt = $student["no_attempts"];
             }
 
             // Display details after insertion/update
-            echo "<h2>Details:</h2>";
+            echo "<h2>Quiz Submitted:</h2>";
             echo "<table border=\"1\" >\n";
             echo "<tr>\n"
                 . "<th scope=\"col\">First Name</th>"
@@ -163,8 +169,16 @@
 
             echo "</table>";
 
-            echo "<p>Quiz data has been successfully inserted/updated in the database.</p>";
+            if (($student["no_attempts"] + 1) < 2) {
+                echo "<p>Quiz data has been successfully inserted/updated in the database.</p>";
+                echo "<p>Number of Attempts Remaining: " . ($attemptsremaining) . "</p>";
+            } 
 
+            else {
+                echo "<p>All attempts have been exhausted. Further updates are not allowed.</p>";
+                echo "<p>Number of Attempts Remaining: " . ($attemptsremaining - 1) . "</p>";
+            }
+            
             mysqli_free_result($findStudent);
             mysqli_close($conn);
         }
