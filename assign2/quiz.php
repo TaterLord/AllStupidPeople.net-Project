@@ -34,7 +34,7 @@
     </nav>
     <br><br>
 
-    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+    <form method="post" action="markquiz.php">
 
         <!-- Text Input -->
         <fieldset>
