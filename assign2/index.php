@@ -1,40 +1,21 @@
-<!-- 
-    Hey it's jacob from allstupidpeople.net, the guy that made this page.
-    Putting this here to list off the "enhancements" included in the page. They are as follows:
-    • Parallax effect on the background image
-    • Really cool navigation bar (seen on all pages) 
-    • Funky little zoom effect when hovering over page summaries
-
-    Nav bar stuff can be found in the base css file, while parallax and zoom effect can be found in index css file
-
-    have a good one 👍
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Intro to ASP.NET">
-    <meta name="keywords" content="asp.net, index, project">
-    <meta name="author" content="Jacob T">
+    <meta charset="utf-8" >
+    <meta name="description" content="Intro to ASP.NET" >
+    <meta name="keywords" content="asp.net, index, project" >
+    <meta name="author" content="Jacob T"  >
     <title>ASP.NET</title>
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
 </head>
 <body>
-    <div class="parallax">
-        <div class="caption">
-            <span class="border">ASP.NET</span>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="topic.php">About ASP.NET</a></li>
-            <li><a href="quiz.php">Quiz</a></li>
-            <li style="float:right"><a href="enhancements1.html">Enhancements</a></li>
-        </ul>
-    </nav>
+    <?php
+        include("header.inc.php");
+    ?>
+    <?php
+        include("navigation.inc.php");
+    ?>
     <br>
     <br>
     <div class="hoverzoom">
@@ -42,16 +23,13 @@
         <p>
             ASP.NET is a web application framework that is used to build dynamic and interactive web pages. It is a server-side technology that is designed and developed by Microsoft. Built on top of the .NET framework, it is used by developers to build web applications that are secure, scalable, and reliable. <a href="topic.html">Learn more about ASP.NET →</a>
         </p>
-        <br>
-        <br>
-        <p>
-            <em>Part 1 Video Submission:</em> <a href="https://www.youtube.com/watch?v=ddUCOnlkB34&ab_channel=Cob">https://www.youtube.com/watch?v=ddUCOnlkB34&ab_channel=Cob</a>
-        </p>
-        <p>
-            <em>Part 2 Video Submission:</em> <a href=""></a>
-        </p>
     </div>
     <br>
+    <div id="video">
+        <aside class="hoverzoom">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/ddUCOnlkB34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </aside>
+        </div>
     <br>
     <div class="hoverzoom">
         <h2>How much do you know about ASP.NET?</h2>
@@ -72,23 +50,3 @@
     <footer>Page by Jacob Tuohey - Group 3 "AllStupidPeople.net"</footer>
 </body>
 </html>
-
-<!--
-    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡔⣻⠁⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⢀⣾⠳⢶⣦⠤⣀⠀⠀⠀⠀⠀⠀⠀⣾⢀⡇⡴⠋⣀⠴⣊⣩⣤⠶⠞⢹⣄⠀⠀⠀
-⠀⠀⠀⠀⢸⠀⠀⢠⠈⠙⠢⣙⠲⢤⠤⠤⠀⠒⠳⡄⣿⢀⠾⠓⢋⠅⠛⠉⠉⠝⠀⠼⠀⠀⠀
-⠀⠀⠀⠀⢸⠀⢰⡀⠁⠀⠀⠈⠑⠦⡀⠀⠀⠀⠀⠈⠺⢿⣂⠀⠉⠐⠲⡤⣄⢉⠝⢸⠀⠀⠀
-⠀⠀⠀⠀⢸⠀⢀⡹⠆⠀⠀⠀⠀⡠⠃⠀⠀⠀⠀⠀⠀⠀⠉⠙⠲⣄⠀⠀⠙⣷⡄⢸⠀⠀⠀
-⠀⠀⠀⠀⢸⡀⠙⠂⢠⠀⠀⡠⠊⠀⠀⠀⠀⢠⠀⠀⠀⠀⠘⠄⠀⠀⠑⢦⣔⠀⢡⡸⠀⠀⠀
-⠀⠀⠀⠀⢀⣧⠀⢀⡧⣴⠯⡀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⢸⡠⠔⠈⠁⠙⡗⡤⣷⡀⠀⠀
-⠀⠀⠀⠀⡜⠈⠚⠁⣬⠓⠒⢼⠅⠀⠀⠀⣠⡇⠀⠀⠀⠀⠀⠀⣧⠀⠀⠀⡀⢹⠀⠸⡄⠀⠀
-⠀⠀⠀⡸⠀⠀⠀⠘⢸⢀⠐⢃⠀⠀⠀⡰⠋⡇⠀⠀⠀⢠⠀⠀⡿⣆⠀⠀⣧⡈⡇⠆⢻⠀⠀
-⠀⠀⢰⠃⠀⠀⢀⡇⠼⠉⠀⢸⡤⠤⣶⡖⠒⠺⢄⡀⢀⠎⡆⣸⣥⠬⠧⢴⣿⠉⠁⠸⡀⣇⠀
-⠀⠀⠇⠀⠀⠀⢸⠀⠀⠀⣰⠋⠀⢸⣿⣿⠀⠀⠀⠙⢧⡴⢹⣿⣿⠀⠀⠀⠈⣆⠀⠀⢧⢹⡄
-⠀⣸⠀⢠⠀⠀⢸⡀⠀⠀⢻⡀⠀⢸⣿⣿⠀⠀⠀⠀⡼⣇⢸⣿⣿⠀⠀⠀⢀⠏⠀⠀⢸⠀⠇
-⠀⠓⠈⢃⠀⠀⠀⡇⠀⠀⠀⣗⠦⣀⣿⡇⠀⣀⠤⠊⠀⠈⠺⢿⣃⣀⠤⠔⢸⠀⠀⠀⣼⠑⢼
-⠀⠀⠀⢸⡀⣀⣾⣷⡀⠀⢸⣯⣦⡀⠀⠀⠀⢇⣀⣀⠐⠦⣀⠘⠀⠀⢀⣰⣿⣄⠀⠀⡟⠀⠀
-⠀⠀⠀⠀⠛⠁⣿⣿⣧⠀⣿⣿⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⣿⣿⡿⠈⠢⣼⡇⠀⠀
-⠀⠀⠀⠀⠀⠀⠈⠁⠈⠻⠈⢻⡿⠉⣿⠿⠛⡇⠒⠒⢲⠺⢿⣿⣿⠉⠻⡿⠁⠀⠀⠈⠁⠀⠀
-that's everything :)
--->
