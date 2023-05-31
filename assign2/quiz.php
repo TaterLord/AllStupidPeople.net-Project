@@ -21,10 +21,8 @@
 
 <body>
     <?php
-        include("header.inc.php");
-    ?>
-    
-    <?php
+        $pagetitle = "Quiz";
+        include("header.inc.php"); 
         include("navigation.inc.php");
     ?>
     <br><br>
