@@ -1,0 +1,13 @@
+/*
+    filename:       markquiz.css
+    author:         Akhil Boda
+    created:        31/05/2023
+    last modified:  31/05/2023
+    description:    A CSS file to style markquiz.php
+*/
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
