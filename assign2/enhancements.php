@@ -19,11 +19,9 @@
     <link href="styles/enhancements.css" rel="stylesheet">
 </head>
 <body>
-    <div class="parallax">
-        <h1>Website Enhancements</h1>
-    </div>
-    
     <?php
+        $pagetitle = "Enhancements";
+        include("header.inc.php");
         include("navigation.inc.php");
     ?>
     <br>
