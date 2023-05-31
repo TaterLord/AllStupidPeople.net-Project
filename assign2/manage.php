@@ -18,10 +18,9 @@
     <link href="styles/manage.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Manage Data</h1>
     <?php 
+        $pagetitle = "Manage Data";
         include("header.inc.php");
-        include("navigation.inc.php"); 
     ?>
 
     <!-- User Menu -->
@@ -108,7 +107,7 @@
 
     <section>
         <!-- List 1 student's attempts using student id or first name -->
-        <form action="manage.php" method="post"><p>
+        <form action="managetable.php" method="post"><p>
             <label for="firstname">First Name&nbsp;</label>
             <input type="text" name="first name" id="firstname"
             pattern="[A-Za-z-']{1-30}" title="Must have only a-z, A-Z, - and ', maximum of 30 characters">
@@ -122,18 +121,18 @@
     </section>
     <section>
         <!-- list all students with perfect score or fail -->
-        <form action="manage.php" method="post"><p>
+        <form action="managetable.php" method="post"><p>
             <input type="submit" value="List all students who scored 100% first try">
         </p></form>
     </section>
     <section>
-        <form action="manage.php" method="post"><p>
+        <form action="managetable.php" method="post"><p>
             <input type="submit" value="List all students who scored < 50% second try">
         </p></form>
     </section>
     <section>
         <!-- Delete a student's attempts using id -->
-        <form action="manage.php" method="post"><p>
+        <form action="managetable.php" method="post"><p>
             <label for="id">Student ID</label>
             <input type="text" name="student id" id="id" required="required"
             pattern="[0-9]{7,10}" title="Must have only numbers, either 7 or 10 characters">
@@ -143,7 +142,7 @@
     </section>
     <section>
         <!-- Change a student's attempt score using id, attempt number and the new score -->
-        <form action="manage.php" method="post"><p>
+        <form action="managetable.php" method="post"><p>
             <label for="id">Student ID</label>
             <input type="text" name="student id" id="id" required="required"
             pattern="[0-9]{7,10}" title="Must have only numbers, either 7 or 10 characters">

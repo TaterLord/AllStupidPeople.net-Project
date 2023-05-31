@@ -22,8 +22,7 @@
     <body>
         <?php
             $pagetitle = "About ASP.NET";
-            include("header.inc.php"); 
-            include("navigation.inc.php");
+            include("header.inc.php");
         ?>
 
     <br>

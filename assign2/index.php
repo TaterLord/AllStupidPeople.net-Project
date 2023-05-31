@@ -10,11 +10,19 @@
     <link href="styles/index.css" rel="stylesheet">
 </head>
 <body>
-    <?php
-        $pagetitle  = "ASP.NET";
-        include("header.inc.php");
-        include("navigation.inc.php");
-    ?>
+    <div class="parallax">
+        <div class="caption">
+            <span class="border">ASP.NET</span>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="topic.php">About ASP.NET</a></li>
+            <li><a href="quiz.php">Quiz</a></li>
+            <li style="float:right"><a href="enhancements1.html">Enhancements</a></li>
+        </ul>
+    </nav>
     <br>
     <br>
     <div class="hoverzoom">

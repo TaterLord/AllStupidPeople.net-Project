@@ -1,3 +1,11 @@
+/*------  Headers  ------*/
+
+h1 {
+    position:absolute;
+    padding-top: 0em;
+    width: 100%;
+}
+
 /*------  Content  ------*/
 
 p {

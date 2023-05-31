@@ -22,7 +22,6 @@
     <?php
         $pagetitle = "Enhancements";
         include("header.inc.php");
-        include("navigation.inc.php");
     ?>
     <br>
     <br>

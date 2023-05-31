@@ -17,33 +17,38 @@
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/manage.css" rel="stylesheet">
 </head>
-<?php   //Functions
-    //Create Table Function
-    function CreateTable($query)
-    {
-        echo "<table border=\"1\" >\n<tr>\n"
-        . "<th scope=\"col\">First Name</th>"
-        . "<th scope=\"col\">Last Name</th>"
-        . "<th scope=\"col\">Attempts</th>"
-        . "<th scope=\"col\">Score</th>"
-        . "</tr>\n";
-        while ($row = mysqli_fetch_assoc($query))
-        {
-            echo "<tr>\n"
-                ."<td>", $row["f name"], "</td>\n"
-                ."<td>", $row["l name"], "</td>\n"
-                ."<td>", $row["student id"], "</td>\n"
-                ."<td>", $row["no attempts"], "</td>\n"
-                ."<td>", $row["score"], "</td>\n"
-                ."<td>", $row["date and time"], "</td>\n"
-                ."</tr>\n";
-        }
-        echo "</table>\n";
-        mysqli_free_result($query);
-    }
-?>
-
 <body>
+    <?php 
+        $pagetitle = "Data Output";
+        include("header.inc.php");
+    ?>
+    
+    <?php   //Functions
+        //Create Table Function
+        function CreateTable($query)
+        {
+            echo "<table border=\"1\" >\n<tr>\n"
+            . "<th scope=\"col\">First Name</th>"
+            . "<th scope=\"col\">Last Name</th>"
+            . "<th scope=\"col\">Attempts</th>"
+            . "<th scope=\"col\">Score</th>"
+            . "</tr>\n";
+            while ($row = mysqli_fetch_assoc($query))
+            {
+                echo "<tr>\n"
+                    ."<td>", $row["f name"], "</td>\n"
+                    ."<td>", $row["l name"], "</td>\n"
+                    ."<td>", $row["student id"], "</td>\n"
+                    ."<td>", $row["no attempts"], "</td>\n"
+                    ."<td>", $row["score"], "</td>\n"
+                    ."<td>", $row["date and time"], "</td>\n"
+                    ."</tr>\n";
+            }
+            echo "</table>\n";
+            mysqli_free_result($query);
+        }
+    ?>
+    
     <!-- Table Output -->
 <?php
     require("sanitise.php");

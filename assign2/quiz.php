@@ -4,7 +4,6 @@
     created:        30/03/2023
     last modified:  29/05/2023
     description:    Group 03 - Project
-    enhancements:   
 -->
 
 <!DOCTYPE html>
@@ -18,12 +17,10 @@
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/quiz.css" rel="stylesheet">
 </head>
-
 <body>
     <?php
         $pagetitle = "Quiz";
-        include("header.inc.php"); 
-        include("navigation.inc.php");
+        include("header.inc.php");
     ?>
     <br><br>
 
