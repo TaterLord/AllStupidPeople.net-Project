@@ -1,5 +1,3 @@
  <div class="parallax">
-        <div class="caption">
-            <span class="border"><?php echo $pagetitle; ?></span>
-        </div>
+  <h1><?php echo $pagetitle; ?></h1>
     </div>
