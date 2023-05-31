@@ -20,18 +20,13 @@
 </head>
 
 <body>
-    <div class="parallax">
-        <h1>ASP.net Quiz</h1>
-    </div>
+    <?php
+        include("header.inc.php");
+    ?>
     
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="topic.php">About ASP.NET</a></li>
-            <li><a href="quiz.php">Quiz</a></li>
-            <li style="float:right"><a href="enhancements1.html">Enhancements</a></li>
-        </ul>
-    </nav>
+    <?php
+        include("navigation.inc.php");
+    ?>
     <br><br>
 
     <form method="post" action="markquiz.php">
