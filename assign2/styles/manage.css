@@ -1,0 +1,18 @@
+/*------  Content  ------*/
+
+p {
+    text-align: left;
+    margin: 0.6em;
+    text-indent: 2em;
+}
+
+section {
+    padding: 2em;
+    background-color: #272729cb;
+    margin: 2em auto;
+    border-radius: 40px;
+}
+
+.hidden {
+    display: none;
+}
