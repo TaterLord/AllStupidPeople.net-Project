@@ -1,6 +1,6 @@
 <!--
     filename:       markquiz.php
-    authors:        AllStupidPeople.net, Akhil Boda
+    authors:        AllStupidPeople.net, Akhil Boda, Joel Hadfield
     created:        29/05/2023
     last modified:  29/05/2023
     description:    Group 03 - Project
@@ -38,6 +38,10 @@
             $language = sanitizeInput($_POST["language"]);
             $date = sanitizeInput($_POST["date"]);
 
+
+
+
+            
             // Initialize updatedAttempt
             $updatedAttempt = 1;
 
@@ -86,6 +90,58 @@
             if (empty($date)) {
                 $errors[] = "Date is required.";
             }
+            
+
+
+            //checking answers
+            if($whoMade == "Microsoft" || $whoMade == "microsoft")
+            {
+                $score++;
+            }
+            if($whatPurpose == "B")
+            {
+                $score++;
+            }
+            $tempScore = 0;
+            for($i = 0; $i < 4; $i++)
+            {
+                if($excel[$i] == "A")
+                {
+                    $tempScore = $tempScore + 0.25;
+                }
+                else if($excel[$i] == "D")
+                {
+                    $tempScore = $tempScore + 0.25;
+                }
+                else if($excel[$i] == "E")
+                {
+                    $tempScore = $tempScore + 0.25;
+                }
+                else if($excel[$i] == "H")
+                {
+                    $tempScore = $tempScore + 0.25;
+                }
+                else
+                {
+                    $tempScore = $tempScore - 0.25;
+                }
+            }
+            if($tempScore < 0)
+            {
+                $tempScore = 0;
+            }
+            $score += $tempScore;
+            if($language == 3)
+            {
+                $score++;
+            }
+            if($date == "2002-01-05")
+            {
+                $score++;
+            }
+
+
+
 
             // If there are errors, display them and stop further processing
             if (!empty($errors)) {
@@ -94,6 +150,7 @@
                 foreach ($errors as $error) {
                     echo "<li>$error</li>";
                 }
+                echo "<a href= quiz.php>Click here to return</a>";
                 echo "</ul>";
                 exit();
             }
@@ -120,7 +177,7 @@
                     l_name VARCHAR(30),
                     student_id VARCHAR(30),
                     no_attempts INT(2),
-                    score INT(11)
+                    score FLOAT(11)
                 )";
 
                 if (mysqli_query($conn, $sql)) {
@@ -178,6 +235,8 @@
                 echo "<p>All attempts have been exhausted. Further updates are not allowed.</p>";
                 echo "<p>Number of Attempts Remaining: " . ($attemptsremaining - 1) . "</p>";
             }
+
+            echo "<p><a href= quiz.php>Click here to return</a></p>";
             
             mysqli_free_result($findStudent);
             mysqli_close($conn);
