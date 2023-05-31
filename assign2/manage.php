@@ -62,8 +62,6 @@
 <?php
     require_once("settings.php");
 
-    $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
-
     if (isset($_GET["choice"]))
     {
         $choice = $_GET["choice"];
@@ -104,7 +102,14 @@
         $result = mysqli_query($conn, $query);
     }
 ?>
-
+    <section>
+        <!-- list all data -->
+        <form action="managetable.php" method="post"><p>
+            <input type="submit" value="List all data">
+            
+            <input type="text" name="query" id="query" readonly="readonly" value="a">
+        </p></form>
+    </section>
     <section>
         <!-- List 1 student's attempts using student id or first name -->
         <form action="managetable.php" method="post"><p>
@@ -116,6 +121,8 @@
             <input type="text" name="student id" id="id"
             pattern="[0-9]{7,10}" title="Must have only numbers, either 7 or 10 characters">
             
+            <input type="text" name="query" id="query" readonly="readonly" value="B">
+
             <p><input type="submit" value="List student's attempts"></p>
         </p></form>
     </section>
@@ -123,11 +130,15 @@
         <!-- list all students with perfect score or fail -->
         <form action="managetable.php" method="post"><p>
             <input type="submit" value="List all students who scored 100% first try">
+            
+            <input type="text" name="query" id="query" readonly="readonly" value="C">
         </p></form>
     </section>
     <section>
         <form action="managetable.php" method="post"><p>
             <input type="submit" value="List all students who scored < 50% second try">
+            
+            <input type="text" name="query" id="query" readonly="readonly" value="D">
         </p></form>
     </section>
     <section>
@@ -136,6 +147,8 @@
             <label for="id">Student ID</label>
             <input type="text" name="student id" id="id" required="required"
             pattern="[0-9]{7,10}" title="Must have only numbers, either 7 or 10 characters">
+            
+            <input type="text" name="query" id="query" readonly="readonly" value="E">
             
             <p><input type="submit" value="Delete student's attempts"></p>
         </p></form>
@@ -152,6 +165,8 @@
 
             <label for="score">New Score</label>
             <input type="number" name="score" id="score" required="required">
+            
+            <input type="text" name="query" id="query" readonly="readonly" value="F">
             
             <p><input type="submit" value="Change score for an attempt"></p>
         </p></form>
