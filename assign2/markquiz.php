@@ -15,6 +15,7 @@
     <meta name="author" content="">
     <title>Quiz Marking Page</title>
     <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/markquiz.css" rel="stylesheet">
 </head>
 <body>
     <?php
