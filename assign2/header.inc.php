@@ -1,5 +1,5 @@
  <div class="parallax">
         <div class="caption">
-            <span class="border">ASP.NET</span>
+            <span class="border"><?php echo $pagetitle; ?></span>
         </div>
     </div>
