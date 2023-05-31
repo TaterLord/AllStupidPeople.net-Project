@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php
-    $pagetitle  = "ASP.NET"
+        $pagetitle  = "ASP.NET";
         include("header.inc.php");
         include("navigation.inc.php");
     ?>
