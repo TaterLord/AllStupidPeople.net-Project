@@ -23,14 +23,9 @@
         <h1>Website Enhancements</h1>
     </div>
     
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="topic.html">About ASP.NET</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li style="float:right"><a href="enhancements.html">Enhancements</a></li>
-        </ul>
-    </nav>
+    <?php
+        include("navigation.inc.php");
+    ?>
     <br>
     <br>
 
